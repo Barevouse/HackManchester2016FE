@@ -1,9 +1,11 @@
 import React from 'react';
+import ImageService from '../services/ImageService';
 
 class TweetForm extends React.Component {
 
 	constructor(props) {
 		super(props);
+		this.imageService = new ImageService();
 		this.state = {
 			steganographyImageURL: ''
 		}
@@ -30,23 +32,11 @@ class TweetForm extends React.Component {
 	submitTweet(e) {
 		e.preventDefault();
 
-		fetch('http://hackmcr16-api.azurewebsites.net/api/image/create', {
-			method: 'POST',
-			body: JSON.stringify(this.state),
-			headers: {
-				'Content-Type': 'application/json',
-			}
-		})
-		.then(function(response) {
-			response.json().then(function(json) {
-				this.setState({
-					steganographyImageURL: 'data:image/png;base64,' + json.Image
-				});
-			}.bind(this));
+		this.imageService.create(this.state, function(response) {
+			this.setState({
+				steganographyImageURL: 'data:image/png;base64,' + response.Image
+			});
 		}.bind(this));
-
-
-
 	}
 
 	render() {
