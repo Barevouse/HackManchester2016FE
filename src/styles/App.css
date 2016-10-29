@@ -19,3 +19,8 @@ body {
   border-width: 1px 0;
   background: #666;
 }
+
+
+.form-group {
+  display:block;
+}
