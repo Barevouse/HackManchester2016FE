@@ -1,0 +1,3 @@
+rootProject.name = 'HackManchester2016MobileApp'
+
+include ':app'
