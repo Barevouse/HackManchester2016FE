@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_c4a8f45ca57119b22a4db7849b8cc5d456367b70\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.0_18dfec877e8a8dbc329a527abb871e5e6cf11b5a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_7e14626466f9fab4499796878d8781837109575e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\daniel.harrison\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_da4568fe6e0de8571eb23dd072cc18519da355c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_49e3fb9298497a8a6b9034417ce68d6fb3b8b6d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.0_63399636d64c9a03e78c0ae5b82f0ff756190ed2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.0_5a67c745d787bc4d4114c79dc1a639fb46184eb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_97fc103554a6c503b2d8162966a68583f34669f7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0263dee636cb8665aeefb927928ce722dce57e3e">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f9a233f786066219dadffd3c77fdadefab2f2d92\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_1ab9a3d0bdea6619c22fb3de8f04df90b841b593\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_3b3e115b3be3836463fb0adae43aa19a9cbcbf94\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_a6b3d2449f7f128f836a7c023ae4724dab48cebb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_cd026a250e2481ce8d37fed9eb7cb949e0e26b1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_0066b3f7b2c2a35f052cfe81194b2415ab37f929\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_fb7ddde5af01c83aa772fd8c9f9f67ac027a3b42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4cd463f9eb5f845ad3d399a95660a20625917f5f">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_111f40e02b060f7ba21ad1c4103ade3fb50f1943\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_f0e4beb409991666e32a270aa2b5527bb3def19c\classes.dex" />
+    </item>
+
+</items>
