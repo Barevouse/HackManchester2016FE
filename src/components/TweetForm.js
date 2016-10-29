@@ -17,6 +17,8 @@ class TweetForm extends React.Component {
 		});
 	}
 
+	
+
 	updateMessage(e) {
 		this.setState({
 			Message: e.target.value
