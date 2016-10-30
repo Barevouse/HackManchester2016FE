@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
             private void onLoginSuccess(Result<TwitterSession> result) {
 
-                Intent intent = new Intent(getApplicationContext(), ClueListViewActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MissionSelectorActivity.class);
                 startActivity(intent);
             }
 
