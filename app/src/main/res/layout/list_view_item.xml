@@ -2,36 +2,65 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp">
+    android:padding="10dp">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/name" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/screenName" />
+        android:orientation="horizontal">
 
-    <ImageView
-        android:layout_width="50px"
-        android:layout_height="50px"
-        android:id="@+id/image_view_profile_picture"/>
+        <ImageView
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:id="@+id/image_view_profile_picture"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/message" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/clue" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <ImageView
-        android:layout_width="300px"
-        android:layout_height="300px"
-        android:id="@+id/image_view_tweet_attachment"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:theme="@style/TwitterName"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/screenName" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/message"
+                android:theme="@style/TweetBody"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/clue"
+                android:theme="@style/TweetBody"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:id="@+id/image_view_tweet_attachment" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

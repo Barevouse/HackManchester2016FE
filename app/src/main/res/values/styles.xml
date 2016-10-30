@@ -22,4 +22,8 @@
         <item name="android:textSize">18dp</item>
     </style>
 
+    <style name="TweetBody">
+        <item name="android:textSize">16dp</item>
+    </style>
+
 </resources>
