@@ -5,12 +5,11 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.android.gms.vision.text.Text;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
@@ -48,7 +47,7 @@ public class ClueGuessActivity extends AppCompatActivity implements View.OnClick
 
         final Activity thisActivity = this;
 
-        TextView convertedView = (TextView)view;
+        EditText textGuess = (EditText) findViewById(R.id.text_guess);
 
         TwitterSession session = Twitter.getSessionManager().getActiveSession();
         TwitterAuthToken authToken = session.getAuthToken();
@@ -63,14 +62,14 @@ public class ClueGuessActivity extends AppCompatActivity implements View.OnClick
         GuessAnswerRequest request = new GuessAnswerRequest();
         request.Token = authToken.token;
         request.TokenSecret = authToken.secret;
-        request.Screenname = session.getUserName();
-        request.Guess = convertedView.getText().toString();
+        request.ScreenName = "barevouse";
+        request.Guess = textGuess.getText().toString();
 
-        service.guessAnswer(request).enqueue(new Callback<GuessAnswerResponse>() {
+        service.guessAnswer(request).enqueue(new Callback<Object>() {
             @Override
-            public void success(Result<GuessAnswerResponse> result) {
+            public void success(Result<Object> result) {
                 TextView confirmationMessage = (TextView) thisActivity.findViewById(R.id.confirmation_message);
-                confirmationMessage.setText(result.data.Message);
+                confirmationMessage.setText(result.data.toString());
             }
 
             @Override

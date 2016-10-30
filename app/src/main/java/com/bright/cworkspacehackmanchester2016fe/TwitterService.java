@@ -18,5 +18,5 @@ public interface TwitterService {
 Call<List<Tweet>> getFeedPath(@Query("token") String token, @Query("tokenSecret") String tokenSecret, @Query("latitude") double latitude, @Query("longitude") double longitude, @Query("screenName") String screenName);
 
     @POST("twitter/guessanswer")
-    Call<GuessAnswerResponse> guessAnswer(@Body GuessAnswerRequest request);
+    Call<Object> guessAnswer(@Body GuessAnswerRequest request);
 }

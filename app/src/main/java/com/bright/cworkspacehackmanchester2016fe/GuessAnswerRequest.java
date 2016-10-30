@@ -7,6 +7,6 @@ package com.bright.cworkspacehackmanchester2016fe;
 public class GuessAnswerRequest {
     public String Token;
     public String TokenSecret;
-    public String Screenname;
+    public String ScreenName;
     public String Guess;
 }
