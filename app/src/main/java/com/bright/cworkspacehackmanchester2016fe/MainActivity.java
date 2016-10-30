@@ -21,8 +21,8 @@ import io.fabric.sdk.android.Fabric;
 public class MainActivity extends AppCompatActivity {
 
     // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
-    private static final String TWITTER_KEY = "JNBqAexERCWXZmet3IQbSaPm5";
-    private static final String TWITTER_SECRET = "cPPF5uFNWvYrViGCrxTpBgiavAz5NORJNh3vAXASz8EM1vZPsw";
+    private static final String TWITTER_KEY = "lsoMiOYqptZ6MdxxTiM1sIsc7";
+    private static final String TWITTER_SECRET = "7x15u25SsTNKhXDG5hRrChV2P3zl3RzC0SxJPs6BMiBKzG1nzi";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
             private void processLogin(Result<TwitterSession> result) {
                 AuthToken authToken = result.data.getAuthToken();
+
+
+
                 Log.d("TwitterKit", authToken.toString());
             }
 
