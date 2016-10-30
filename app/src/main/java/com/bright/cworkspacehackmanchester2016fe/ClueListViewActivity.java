@@ -8,6 +8,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -35,7 +36,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Daniel.Harrison on 30/10/2016.
  */
 
-public class ClueListViewActivity extends AppCompatActivity implements android.location.LocationListener {
+public class ClueListViewActivity extends AppCompatActivity implements android.location.LocationListener, SwipeRefreshLayout.OnRefreshListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,24 +44,28 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
 
         final Activity thisActivity = this;
 
+        setContentView(R.layout.activity_cluelistview);
+
+        SwipeRefreshLayout layout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
+        layout.setOnRefreshListener(this);
+
+        beginLocationUpdates(thisActivity);
+    }
+
+    private void beginLocationUpdates(Activity thisActivity) {
         LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(thisActivity,
                     new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                     0);
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, (android.location.LocationListener) this);
-
-        setContentView(R.layout.activity_cluelistview);
     }
 
     @Override
     public void onLocationChanged(Location location) {
 
         final Activity thisActivity = this;
-
-        TextView longLatTextView = (TextView) thisActivity.findViewById(R.id.text_view_long_lat);
-        longLatTextView.setText(location.toString());
 
         TwitterSession session = Twitter.getSessionManager().getActiveSession();
         TwitterAuthToken authToken = session.getAuthToken();
@@ -78,9 +83,11 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
 
                     @Override
                     public void success(Result<List<Tweet>> result) {
-                        ListView clueListView = (ListView)thisActivity.findViewById(R.id.clue_list_view);
+                        ListView clueListView = (ListView) thisActivity.findViewById(R.id.clue_list_view);
                         clueListView.setAdapter(new ClueListArrayAdapter(thisActivity,
                                 R.layout.list_view_item, result.data));
+                        SwipeRefreshLayout swipeRefreshLayout = (SwipeRefreshLayout) thisActivity.findViewById(R.id.swipe_refresh_layout);
+                        swipeRefreshLayout.setRefreshing(false);
                     }
 
                     @Override
@@ -89,7 +96,21 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
                     }
                 });
 
+        endLocationUpdates();
+    }
+
+    private void endLocationUpdates() {
         LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         locationManager.removeUpdates(this);
     }
 
@@ -106,5 +127,10 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
     @Override
     public void onStatusChanged(String s, int i, Bundle bundle) {
 
+    }
+
+    @Override
+    public void onRefresh() {
+        beginLocationUpdates(this);
     }
 }
