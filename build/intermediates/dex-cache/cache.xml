@@ -124,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="113ac7e2045d0e5e3aa51d2732066f63d746954b">
+        sha1="a13686397059741903ebcddaf9428de0032cb9f2">
         <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_111f40e02b060f7ba21ad1c4103ade3fb50f1943\classes.dex" />
     </item>
     <item
@@ -358,7 +358,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="9372d4fbf303af35a38eb3e3b5a1c8eb04fa0c5f">
+        sha1="1d664d3f539d74b9b4871d4702f7bad11feaae04">
         <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_f9a233f786066219dadffd3c77fdadefab2f2d92\classes.dex" />
     </item>
     <item

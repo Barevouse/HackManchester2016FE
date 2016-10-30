@@ -3,6 +3,7 @@ package com.bright.cworkspacehackmanchester2016fe;
 import android.*;
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
@@ -10,9 +11,11 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -37,7 +40,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Daniel.Harrison on 30/10/2016.
  */
 
-public class ClueListViewActivity extends AppCompatActivity implements android.location.LocationListener, SwipeRefreshLayout.OnRefreshListener {
+public class ClueListViewActivity extends AppCompatActivity implements android.location.LocationListener,
+        SwipeRefreshLayout.OnRefreshListener, AdapterView.OnItemClickListener {
 
     private Date mLastRefreshed = new Date(0);
     private int PollFrequencyInSeconds = 10;
@@ -49,6 +53,11 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
         final Activity thisActivity = this;
 
         setContentView(R.layout.activity_cluelistview);
+
+        ListView listView = (ListView) findViewById(R.id.clue_list_view);
+        listView.setOnItemClickListener(this);
+
+        initialiseToolbar();
 
         SwipeRefreshLayout layout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
         layout.setOnRefreshListener(this);
@@ -64,6 +73,12 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
                     0);
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, (android.location.LocationListener) this);
+    }
+
+    private void initialiseToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setLogo(R.mipmap.actionbar_logo);
     }
 
     @Override
@@ -144,5 +159,11 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
     @Override
     public void onRefresh() {
         beginLocationUpdates(this);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Intent intent = new Intent(this, ClueGuessActivity.class);
+        startActivity(intent);
     }
 }

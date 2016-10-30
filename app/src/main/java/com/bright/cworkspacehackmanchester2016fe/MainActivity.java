@@ -39,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Fabric.with(this, new Crashlytics(), new Twitter(authConfig));
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(toolbar);
-
-        toolbar.setLogo(R.mipmap.actionbar_logo);
+        initialiseToolbar();
 
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -73,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void initialiseToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setLogo(R.mipmap.actionbar_logo);
+    }
 
 
     @Override
