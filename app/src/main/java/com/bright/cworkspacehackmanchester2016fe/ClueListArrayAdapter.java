@@ -23,7 +23,7 @@ import java.util.List;
 
 public class ClueListArrayAdapter extends ArrayAdapter<Tweet> {
 
-    List<Tweet>mClues;
+    List<Tweet> mClues;
     Context mContext;
 
     public ClueListArrayAdapter(Context context, int resource, List<Tweet> clues) {
@@ -48,37 +48,38 @@ public class ClueListArrayAdapter extends ArrayAdapter<Tweet> {
         TextView screenName= (TextView) row.findViewById(R.id.screenName);
         screenName.setText("@" + currentTweet.ScreenName);
 
-
-        ImageView profilePicture = (ImageView) row.findViewById(R.id.profilePicture);
+        ImageView profilePictureImageView = (ImageView) row.findViewById(R.id.image_view_profile_picture);
         URL url = null;
         try {
             url = new URL(currentTweet.ProfileImageUrl);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        Bitmap bmp = null;
+
+
+        Bitmap profilePicture = null;
         try {
-            bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+            profilePicture = BitmapFactory.decodeStream(url.openConnection().getInputStream());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        profilePicture.setImageBitmap(bmp);
+        profilePictureImageView.setImageBitmap(profilePicture);
 
         if(!currentTweet.MediaUrls.isEmpty()){
-        ImageView media = (ImageView) row.findViewById(R.id.media);
+        ImageView tweetAttachmentImageView = (ImageView) row.findViewById(R.id.image_view_tweet_attachment);
         URL mediaUrl = null;
         try {
             mediaUrl = new URL(currentTweet.MediaUrls.get(0));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        Bitmap mediabmp = null;
+        Bitmap tweetAttachmentBitmap = null;
         try {
-            mediabmp = BitmapFactory.decodeStream(mediaUrl.openConnection().getInputStream());
+            tweetAttachmentBitmap = BitmapFactory.decodeStream(mediaUrl.openConnection().getInputStream());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        media.setImageBitmap(mediabmp);
+            tweetAttachmentImageView.setImageBitmap(tweetAttachmentBitmap);
         }
         return row;
     }
