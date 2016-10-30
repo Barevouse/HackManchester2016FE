@@ -46,7 +46,7 @@ public class ClueListViewActivity extends AppCompatActivity {
             @Override
             public void success(Result<List<Tweet>> result) {
                 ListView clueListView = (ListView)thisActivity.findViewById(R.id.clue_list_view);
-                clueListView.setAdapter(new ArrayAdapter<Tweet>(getApplicationContext(),
+                clueListView.setAdapter(new ClueListArrayAdapter(thisActivity,
                         R.layout.list_view_item, result.data));
             }
 
