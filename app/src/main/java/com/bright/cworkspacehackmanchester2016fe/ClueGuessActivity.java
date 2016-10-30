@@ -77,6 +77,10 @@ public class ClueGuessActivity extends AppCompatActivity implements View.OnClick
             public void success(Result<GuessAnswerResponse> result) {
                 TextView confirmationMessage = (TextView) thisActivity.findViewById(R.id.confirmation_message);
                 confirmationMessage.setText(result.data.message);
+                if (result.data.message.startsWith("Congratulations")) {
+                    findViewById(R.id.button_submit_guess).setVisibility(View.GONE);
+                    findViewById(R.id.text_guess).setVisibility(View.GONE);
+                }
             }
 
             @Override
