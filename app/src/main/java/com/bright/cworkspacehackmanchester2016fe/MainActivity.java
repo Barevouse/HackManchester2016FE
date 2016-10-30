@@ -4,19 +4,23 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
 import com.twitter.sdk.android.Twitter;
-import com.twitter.sdk.android.core.AuthToken;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+import com.twitter.sdk.android.core.TwitterAuthToken;
 import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
+import java.io.IOException;
+import java.util.List;
+
 import io.fabric.sdk.android.Fabric;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Fabric.with(this, new Crashlytics(), new Twitter(authConfig));
         setContentView(R.layout.activity_main);
@@ -35,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         loginButton.setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
-                processLogin(result);
+                onLoginSuccess(result);
             }
 
             @Override
@@ -43,12 +48,10 @@ public class MainActivity extends AppCompatActivity {
                 logFailure(exception);
             }
 
-            private void processLogin(Result<TwitterSession> result) {
-                AuthToken authToken = result.data.getAuthToken();
+            private void onLoginSuccess(Result<TwitterSession> result) {
 
-
-
-                Log.d("TwitterKit", authToken.toString());
+                Intent intent = new Intent(getApplicationContext(), ClueListViewActivity.class);
+                startActivity(intent);
             }
 
             private void logFailure(TwitterException exception) {

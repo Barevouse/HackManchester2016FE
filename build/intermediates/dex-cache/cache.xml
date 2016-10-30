@@ -3,12 +3,48 @@
 
     <item
         is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_c4a8f45ca57119b22a4db7849b8cc5d456367b70\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
         <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_7e14626466f9fab4499796878d8781837109575e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.1.0_ce4b5547d6bf9ffb4233777f8d2d38f6325c8ad9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_49e3fb9298497a8a6b9034417ce68d6fb3b8b6d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.10\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ed6b455e3dd7bbf1ff31f8df0b41e2f0d87f3ace">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-answers-1.3.10_3b2d1fdb01b82ad6bd22c2b53cd541ba39ebaff2\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -21,6 +57,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_6a71e2d4e6386712147d0aef6b9b4d783fc460a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_cd026a250e2481ce8d37fed9eb7cb949e0e26b1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
         jumboMode="true"
         optimize="true"
@@ -30,11 +84,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_0066b3f7b2c2a35f052cfe81194b2415ab37f929\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="342d3220e937e67e12d311661e63d56928227086">
+        sha1="459e5017470c5e938584844935b632617efcbbb6">
         <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_111f40e02b060f7ba21ad1c4103ade3fb50f1943\classes.dex" />
     </item>
     <item
@@ -84,6 +147,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.0_ea03edaa0fd07873a4d728ec7b2bc4bdee216a54\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
         jumboMode="true"
         optimize="true"
@@ -102,12 +174,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.2_471ad97ec05f30e253bf002499f977b7d802dcaa\classes.dex" />
+        sha1="3eead64d9f87f223bca112ed439c3b7132355250">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.twitter.sdk.android-tweet-ui-2.1.1_bcfb25d98c337e3028b68c45c6eb544450484340\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -126,6 +198,15 @@
         revision="25.0.0"
         sha1="02cc9f2e5899415add52bc716602b6b38e7eeb99">
         <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-crashlytics-2.6.5_5f8a11e094a6571f841be1d43a1a8707f2e70f73\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.twitter\twitter-text\1.13.0\78415b95ae3184c5926d593feab64bfc0b73b2dd\twitter-text-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78415b95ae3184c5926d593feab64bfc0b73b2dd">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\twitter-text-1.13.0_f788d8b89f2ae08b6138d24c20f3a33d5fea2683\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -174,105 +255,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_fb7ddde5af01c83aa772fd8c9f9f67ac027a3b42\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter\2.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="37e9c697db4b3b7f61249b4df0d758cdd85338e2">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.twitter.sdk.android-twitter-2.1.1_2490715824059797018aad1e7b9355555167994c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_c4a8f45ca57119b22a4db7849b8cc5d456367b70\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_49e3fb9298497a8a6b9034417ce68d6fb3b8b6d1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.crashlytics.sdk.android\answers\1.3.10\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ed6b455e3dd7bbf1ff31f8df0b41e2f0d87f3ace">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.crashlytics.sdk.android-answers-1.3.10_3b2d1fdb01b82ad6bd22c2b53cd541ba39ebaff2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_cd026a250e2481ce8d37fed9eb7cb949e0e26b1c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_0066b3f7b2c2a35f052cfe81194b2415ab37f929\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.6.1_48d90fb989972a87ef1f66dd963b79c225b29ba6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.0\2b802460eea20f8f2ad9c08c74e0f14718e88aa9\okhttp-3.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.0_ea03edaa0fd07873a4d728ec7b2bc4bdee216a54\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.twitter.sdk.android\tweet-ui\2.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3eead64d9f87f223bca112ed439c3b7132355250">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.twitter.sdk.android-tweet-ui-2.1.1_bcfb25d98c337e3028b68c45c6eb544450484340\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\daniel.harrison\.gradle\caches\modules-2\files-2.1\com.twitter\twitter-text\1.13.0\78415b95ae3184c5926d593feab64bfc0b73b2dd\twitter-text-1.13.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="78415b95ae3184c5926d593feab64bfc0b73b2dd">
-        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\twitter-text-1.13.0_f788d8b89f2ae08b6138d24c20f3a33d5fea2683\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
@@ -297,6 +279,24 @@
         revision="25.0.0"
         sha1="fec53ac7bddc8ae74155e43b91440ee216ffaa86">
         <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.twitter.sdk.android-tweet-composer-2.1.0_410e985d36ef4b7cf326e149a07c61b842fbd3b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_fb7ddde5af01c83aa772fd8c9f9f67ac027a3b42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Workspace\HackManchester2016FE\app\build\intermediates\exploded-aar\com.twitter.sdk.android\twitter\2.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="37e9c697db4b3b7f61249b4df0d758cdd85338e2">
+        <dex dex="C:\Workspace\HackManchester2016FE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.twitter.sdk.android-twitter-2.1.1_2490715824059797018aad1e7b9355555167994c\classes.dex" />
     </item>
 
 </items>
