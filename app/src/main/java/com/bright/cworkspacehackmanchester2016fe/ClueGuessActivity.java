@@ -72,11 +72,11 @@ public class ClueGuessActivity extends AppCompatActivity implements View.OnClick
         request.ScreenName = screenName;
         request.Guess = textGuess.getText().toString();
 
-        service.guessAnswer(request).enqueue(new Callback<Object>() {
+        service.guessAnswer(request).enqueue(new Callback<GuessAnswerResponse>() {
             @Override
-            public void success(Result<Object> result) {
+            public void success(Result<GuessAnswerResponse> result) {
                 TextView confirmationMessage = (TextView) thisActivity.findViewById(R.id.confirmation_message);
-                confirmationMessage.setText(result.data.toString());
+                confirmationMessage.setText(result.data.message);
             }
 
             @Override

@@ -5,5 +5,5 @@ package com.bright.cworkspacehackmanchester2016fe;
  */
 
 public class GuessAnswerResponse {
-    public String Message;
+    public String message;
 }
