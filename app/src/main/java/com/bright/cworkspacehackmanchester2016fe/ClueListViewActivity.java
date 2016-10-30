@@ -27,6 +27,7 @@ import com.twitter.sdk.android.core.TwitterAuthToken;
 import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.TwitterSession;
 
+import java.util.Date;
 import java.util.List;
 
 import retrofit2.Retrofit;
@@ -37,6 +38,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class ClueListViewActivity extends AppCompatActivity implements android.location.LocationListener, SwipeRefreshLayout.OnRefreshListener {
+
+    private Date mLastRefreshed = new Date(0);
+    private int PollFrequencyInSeconds = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +69,8 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
     @Override
     public void onLocationChanged(Location location) {
 
+        if (!shouldRefresh()) return;
+        mLastRefreshed = new Date();
         final Activity thisActivity = this;
 
         TwitterSession session = Twitter.getSessionManager().getActiveSession();
@@ -97,6 +103,12 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
                 });
 
         endLocationUpdates();
+    }
+
+    private boolean shouldRefresh() {
+        Date now = new Date();
+        now.setSeconds(now.getSeconds()-PollFrequencyInSeconds);
+        return mLastRefreshed.before(now);
     }
 
     private void endLocationUpdates() {

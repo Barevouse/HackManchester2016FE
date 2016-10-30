@@ -12,5 +12,5 @@ public class Tweet {
     public String Text;
     public String ProfileImageUrl;
     public List<String> MediaUrls;
-    public HiddenMessage DecryptedMessage;
+    public EmbeddedDetails DecryptedMessage;
 }
