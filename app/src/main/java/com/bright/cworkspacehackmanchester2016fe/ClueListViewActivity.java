@@ -45,10 +45,14 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
 
     private Date mLastRefreshed = new Date(0);
     private int PollFrequencyInSeconds = 10;
+    private String screenName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent = getIntent();
+        screenName = intent.getStringExtra("SelectedMission");
 
         final Activity thisActivity = this;
 
@@ -99,7 +103,7 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
         TwitterService service = retrofit.create(TwitterService.class);
 
         service.getFeedPath(authToken.token, authToken.secret,
-                location.getLatitude(), location.getLongitude(), "barevouse")
+                location.getLatitude(), location.getLongitude(), screenName)
                 .enqueue(new Callback<List<Tweet>>() {
 
                     @Override
@@ -164,6 +168,7 @@ public class ClueListViewActivity extends AppCompatActivity implements android.l
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Intent intent = new Intent(this, ClueGuessActivity.class);
+        intent.putExtra("SelectedMission", screenName);
         startActivity(intent);
     }
 }

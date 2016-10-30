@@ -1,10 +1,14 @@
 package com.bright.cworkspacehackmanchester2016fe;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.Callback;
@@ -46,6 +50,16 @@ public class MissionSelectorActivity extends AppCompatActivity {
                 ListView missionListView = (ListView) thisActivity.findViewById(R.id.mission_list_view);
                 missionListView.setAdapter(new MissionListArrayAdapter(thisActivity,
                         R.layout.mission_list_item, result.data));
+                missionListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        TextView textViewScreenName = (TextView) view.findViewById(R.id.text_view_screen_name);
+
+                        Intent intent = new Intent(thisActivity, ClueListViewActivity.class);
+                        intent.putExtra("SelectedMission", textViewScreenName.getText());
+                        startActivity(intent);
+                    }
+                });
             }
 
             @Override

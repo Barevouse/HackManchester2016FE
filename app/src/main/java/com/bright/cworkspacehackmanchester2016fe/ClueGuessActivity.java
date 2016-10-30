@@ -1,6 +1,7 @@
 package com.bright.cworkspacehackmanchester2016fe;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -25,10 +26,16 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class ClueGuessActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private String screenName;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clueguess);
+
+        Intent intent = getIntent();
+        screenName = intent.getStringExtra("SelectedMission");
 
         initialiseToolbar();
 
@@ -62,7 +69,7 @@ public class ClueGuessActivity extends AppCompatActivity implements View.OnClick
         GuessAnswerRequest request = new GuessAnswerRequest();
         request.Token = authToken.token;
         request.TokenSecret = authToken.secret;
-        request.ScreenName = "barevouse";
+        request.ScreenName = screenName;
         request.Guess = textGuess.getText().toString();
 
         service.guessAnswer(request).enqueue(new Callback<Object>() {
