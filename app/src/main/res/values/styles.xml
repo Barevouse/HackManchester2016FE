@@ -17,4 +17,9 @@
         <item name="android:textColor">#ffffff</item>
     </style>
 
+    <style name="TwitterName">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
 </resources>

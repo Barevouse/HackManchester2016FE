@@ -15,8 +15,8 @@
         android:id="@+id/screenName" />
 
     <ImageView
-        android:layout_width="180px"
-        android:layout_height="180px"
+        android:layout_width="50px"
+        android:layout_height="50px"
         android:id="@+id/image_view_profile_picture"/>
 
     <TextView
@@ -30,8 +30,8 @@
         android:id="@+id/clue" />
 
     <ImageView
-        android:layout_width="50px"
-        android:layout_height="50px"
+        android:layout_width="300px"
+        android:layout_height="300px"
         android:id="@+id/image_view_tweet_attachment"/>
 
 </LinearLayout>

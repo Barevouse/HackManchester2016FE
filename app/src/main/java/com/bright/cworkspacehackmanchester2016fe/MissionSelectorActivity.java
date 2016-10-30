@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -31,6 +32,8 @@ public class MissionSelectorActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_missionselector);
+
+        initialiseToolbar();
 
         final Activity thisActivity = this;
 
@@ -67,5 +70,11 @@ public class MissionSelectorActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void initialiseToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setLogo(R.mipmap.actionbar_logo);
     }
 }
