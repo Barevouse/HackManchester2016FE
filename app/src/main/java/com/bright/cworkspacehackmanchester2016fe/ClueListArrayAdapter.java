@@ -41,12 +41,20 @@ public class ClueListArrayAdapter extends ArrayAdapter<Tweet> {
             row = inflater.inflate (R.layout.list_view_item, parent, false);
         }
         Tweet currentTweet = mClues.get(position);
+
         TextView status = (TextView) row.findViewById(R.id.message);
-        status.setText(currentTweet.Text);
         TextView name = (TextView) row.findViewById(R.id.name);
-        name.setText(currentTweet.Name  );
-        TextView screenName= (TextView) row.findViewById(R.id.screenName);
+        TextView clue = (TextView) row.findViewById(R.id.clue);
+        TextView screenName = (TextView) row.findViewById(R.id.screenName);
+
+        status.setText(currentTweet.Text);
+        name.setText(currentTweet.Name);
         screenName.setText("@" + currentTweet.ScreenName);
+
+        if (currentTweet.DecryptedMessage != null) {
+            // Show clue and message
+            status.setText(currentTweet.DecryptedMessage.Message);
+        }
 
         ImageView profilePictureImageView = (ImageView) row.findViewById(R.id.image_view_profile_picture);
         URL url = null;
